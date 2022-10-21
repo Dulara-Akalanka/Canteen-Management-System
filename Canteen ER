@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-10-21T12:28:00.056Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" etag="WbzlwgJyVFxVoyAFvimp" version="20.4.1" type="github">
+<mxfile host="app.diagrams.net" modified="2022-10-21T12:41:31.853Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" etag="YvEs3Qveg-sj-T3Ix5fr" version="20.4.1" type="github">
   <diagram id="ESJzGgCoKjeVlG6uqxlk" name="Page-1">
     <mxGraphModel dx="2668" dy="2214" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -355,7 +355,7 @@
             <mxPoint x="530" y="530" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="MpexjmQRcJd83rzUOfNe-74" value="&lt;ul style=&quot;font-size: 24px;&quot;&gt;&lt;li&gt;&lt;span style=&quot;font-size: 24px;&quot;&gt;Employee(cashier) generate invoice.&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 24px;&quot;&gt;Employee (admin) can (manage)update, delete and add details of other employees.&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 24px;&quot;&gt;Employee (admin) can (manage)update, delete and add and items.&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;Supplier supply items.&lt;/font&gt;&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+        <mxCell id="MpexjmQRcJd83rzUOfNe-74" value="&lt;ul style=&quot;font-size: 24px;&quot;&gt;&lt;li&gt;&lt;span style=&quot;font-size: 24px;&quot;&gt;Employee can be either an admin or a cashier.&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 24px;&quot;&gt;Employee(cashier) generate invoice.&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 24px;&quot;&gt;Employee (admin) can (manage)update, delete, view and add details of other employees.&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 24px;&quot;&gt;Employee (admin) can (manage)update, delete, view and add and items.&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;Supplier(local suppliers) supply items.&lt;/font&gt;&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="-85" y="870" width="920" height="180" as="geometry" />
         </mxCell>
         <mxCell id="i6FXYfptWPF6KAkxIdCN-3" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;role&lt;/font&gt;" style="whiteSpace=wrap;html=1;align=center;fontSize=24;" parent="1" vertex="1">
