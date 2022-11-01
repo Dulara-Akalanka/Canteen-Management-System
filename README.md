@@ -1,1 +1,1 @@
-# Evalution-Management-System
+# Canteen-Management-System
