@@ -1,5 +1,5 @@
 <?php
-require'dbcon.php';
+require'conn.php';
 
 ?>
 <!doctype html>
@@ -9,7 +9,7 @@ require'dbcon.php';
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <title>ITEM</title>
+    <title>SUPPLIER</title>
 </head>
   <body>
 
@@ -18,45 +18,38 @@ require'dbcon.php';
 <div class="col-md-12">
 <div class="card">
 <div class="card-header">
-    <h4> ITEM Details
-    <a href="item.php" class="btn btn-danger float-end">ADD AN ITEM</a>
+    <h4> SUPPLIER Details
+    <a href="supplier.php" class="btn btn-danger float-end">INSERT A SUPPLIER</a>
 </h4>
 </div>
 <div class="card-body">
     <table class="table table-bordered table-striped">
         <thead>
             <tr>
-                <th>ITEM_ID</th>
-                <th>ITEM_NAME</th>
-                <th>BRAND</th>
-                <th>QUANTITY</th>
-                <th>UNIT_PRICE</th>
-                <th>D-O-M</th>
-                <th>D-O-E</th>
-                <th>EMPLOYEE_ID</th>
-                <th>SUPPLIER_ID</th>
-                <th>ACTION</th>
-</tr>
-</thead>
+                <th>Supplier_ID</th>
+                <th>Supplier_Name</th>
+                <th>Supplier_Address</th>
+                <th>Supplier_Phone_No</th>
+                <th>Supply_Date</th>
+                <th>SUPPLIER_PAYMENT</th>                
+              </tr>
+          </thead>
 <tbody>
     <?php
-    $query = "SELECT * FROM item";
+    $query = "SELECT * FROM supplier";
     $query_run = mysqli_query($conn,$query);
     if(mysqli_num_rows($query_run) > 0)
     {
-        foreach($query_run as $item)
+        foreach($query_run as $supplier)
 {
 ?>
 <tr>
-    <td><?=$item['item_id'];?></td>
-    <td><?=$item['item_name'];?></td>
-    <td><?=$item['brand'];?></td>
-    <td><?=$item['quantity'];?></td>
-    <td><?=$item['unit_price'];?></td>
-    <td><?=$item['d_o_m'];?></td>
-    <td><?=$item['d_o_e'];?></td>
-    <td><?=$item['emp_id'];?></td>
-    <td><?=$item['supplier_id'];?></td>
+    <td><?=$supplier['sup_id'];?></td>
+    <td><?=$supplier['sup_name'];?></td>
+    <td><?=$supplier['sup_address'];?></td>
+    <td><?=$supplier['sup_phone_no'];?></td>
+    <td><?=$supplier['supply_date'];?></td>
+    <td><?=$supplier['sup_payment'];?></td>
     <td>
         <a href="" class="btn btn-danger btn-sm">VIEW</a>
         <a href="" class="btn btn-danger btn-sm">EDIT</a>
