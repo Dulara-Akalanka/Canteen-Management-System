@@ -64,6 +64,19 @@ session_start();
         <label>SUPERVISOR_ID</label>
         <input type="text" name="s_id" class="form-control">
         </div>
+        <label>If needed only</label>
+        <div class="mb-3">
+        <label>USERNAME</label>
+        <input type="text" name="username" class="form-control">
+        </div>
+        <div class="mb-3">
+        <label>PASSWORD</label>
+        <input type="text" name="password" class="form-control">
+        </div>
+        <div class="mb-3">
+        <label>USER_TYPE</label>
+        <input type="text" name="user_type" class="form-control">
+        </div>
 
         <div class="mb-3">
         <button type="SUBMIT" name="SUBMIT" class="btn btn-primary">SUBMIT</button>
