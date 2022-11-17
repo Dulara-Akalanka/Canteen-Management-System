@@ -14,11 +14,20 @@ if(isset($_POST['SUBMIT']))
  $salary = mysqli_real_escape_string($conn, $_POST['s_name']);
  $supervisor_id = mysqli_real_escape_string($conn, $_POST['s_id']);
 
-$query ="INSERT INTO employee (emp_id,emp_name,	emp_address,emp_phone_no,emp_email,d_o_a,d_o_t,salary,supervisor_id)
+ $username = mysqli_real_escape_string($conn, $_POST['username']);
+ $password = mysqli_real_escape_string($conn, $_POST['password']);
+ $user_type = mysqli_real_escape_string($conn, $_POST['user_type']);
+
+
+$query1 ="INSERT INTO employee (emp_id,emp_name,	emp_address,emp_phone_no,emp_email,d_o_a,d_o_t,salary,supervisor_id)
  VALUES ('$emp_id','$emp_name','$emp_address','$emp_phone_no','$emp_email','$d_o_a','$d_o_t','$salary','$supervisor_id')";
 
-$query_run = mysqli_query($conn,$query);
-if($query_run)
+$query2 ="INSERT INTO emp_role (id,username, password, user_type, emp_id) VALUES ('$username','$password','$user_type','$emp_id')";
+
+$query_run1 = mysqli_query($conn,$query1);
+$query_run2 = mysqli_query($conn,$query2);
+
+if($query_run && $query_run2)
 {
     $_SESSION['message']="EMPLOYEE INSERTED SUCCESSFULLY";
  header("Location: employee.php");
