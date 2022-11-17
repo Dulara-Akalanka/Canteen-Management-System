@@ -7,18 +7,26 @@ if(isset($_POST["submit"])){
 
     require_once('conn.php');
 
-    $sql="SELECT * FROM role WHERE username='$username' && password ='$password';";
-    $result = $conn->query($sql);
+    $query="SELECT * FROM role WHERE username='$username' && password ='$password'";
 
-    $num=$result->num_rows;
+    $result = mysqli_query($conn,$query);
 
-    if ($num>0) {
-        header ("Location: index.html");
-    }else {
-        echo" <script>alert('Invalid Username and Password')</script>";
+    $row = mysqli_fetch_array($result);
 
-        echo" <script>location.href='index.php'</script>";
+    if($row["user_type"] == "admin"){
+        header ("Location: ../admin_home/index.html");
     }
+    elseif($row["user_type"] == "cashier"){
+        header ("Location: ../bill page/index.php");
+    }
+
+    // if ($num>0) {
+    //     header ("Location: ../admin_home/index.html");
+    // }else {
+    //     echo" <script>alert('Invalid Username and Password')</script>";
+
+    //     echo" <script>location.href='index.php'</script>";
+    // }
 
 }
 //     $query=mysql_query("SELECT * FROM login WHERE username='$username' AND password='$password'");  
