@@ -34,6 +34,7 @@
     background: linear-gradient(135deg,#80ff72,#7ee8fa);
     right: -30px;
     bottom: -80px;
+    z-index: -1;
   }
 
   form{
@@ -50,6 +51,7 @@
     box-shadow:0 0 40px rgba(7, 8, 16, 0.6);
     padding: 50px 35px;
     color: #ffffff;
+    z-index: 100;
   }
   form * {
    
