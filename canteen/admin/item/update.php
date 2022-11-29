@@ -96,8 +96,8 @@ require 'dbcon.php';
     $emp_id =  $_POST['employee_id'];
     $supplier_id =  $_POST['supplier_id'];
    
-    $query ="UPDATE employee SET  item_id='$item_id',item_name='$item_name',brand='$brand',quantity='$quantity',unit_price='$unit_price',d_o_m='$d_o_m',d_o_e='$d_o_e',emp_id='$emp_id',
-    supplier_id='$supplier_id' WHERE item_id='$id'";
+    $query ="UPDATE item SET  item_id='$item_id',item_name='$item_name',brand='$brand',quantity='$quantity',unit_price='$unit_price',d_o_m='$d_o_m',d_o_e='$d_o_e',emp_id='$emp_id',
+    supplier_id='$supplier_id' WHERE item_id='$product_id'";
 
     $query_run = mysqli_query($conn,$query);
     if($query_run){
